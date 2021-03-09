@@ -3,14 +3,14 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2021 at 05:22 AM
+-- Generation Time: Mar 09, 2021 at 06:09 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
-SET time_zone = "+07:00";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -51,6 +51,14 @@ CREATE TABLE IF NOT EXISTS `book` (
 --
 
 TRUNCATE TABLE `book`;
+--
+-- Dumping data for table `book`
+--
+
+INSERT INTO `book` (`BookID`, `BookName`, `TypeID`, `StatusID`, `Publish`, `UnitPrice`, `UnitRent`, `DayAmount`, `Picture`, `BookDate`) VALUES
+('00001', 'Doraemon', '001', '01', 'Kpn', 150, 3, 2, '-', '2021-03-09'),
+('00002', 'เก็บตะวัน', '002', '03', 'WRP', 250, 3, 2, '-', '2021-03-08');
+
 -- --------------------------------------------------------
 
 --
@@ -72,6 +80,13 @@ CREATE TABLE IF NOT EXISTS `customer` (
 --
 
 TRUNCATE TABLE `customer`;
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`CustomerID`, `CustomerName`, `CustomerSurname`, `CustomerAddr`, `CustomerPhone`) VALUES
+('0001', 'เอกรัตน์ ', 'สิงห์ลอ', 'ปทุมธานี', '0878422970');
+
 -- --------------------------------------------------------
 
 --
@@ -90,6 +105,15 @@ CREATE TABLE IF NOT EXISTS `statusbook` (
 --
 
 TRUNCATE TABLE `statusbook`;
+--
+-- Dumping data for table `statusbook`
+--
+
+INSERT INTO `statusbook` (`StatusID`, `StatusName`) VALUES
+('01', 'ปกติ'),
+('02', 'ชำรุด'),
+('03', 'ส่งซ่อม');
+
 -- --------------------------------------------------------
 
 --
@@ -108,6 +132,15 @@ CREATE TABLE IF NOT EXISTS `typebook` (
 --
 
 TRUNCATE TABLE `typebook`;
+--
+-- Dumping data for table `typebook`
+--
+
+INSERT INTO `typebook` (`TypeID`, `TypeName`) VALUES
+('001', 'การ์ตูน'),
+('002', 'นิยาย'),
+('003', 'นิตยสาร');
+
 --
 -- Constraints for dumped tables
 --
