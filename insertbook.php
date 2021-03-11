@@ -18,12 +18,12 @@
             <td>
                 <form action="handle.php" method="post">
                     <h2>Fill the Form</h2>
-                    <label for="">Username</label>
+                    <label for="">BookID</label>
                     <input type="text" name="user" id="" required><br>
-                    <label for="">User name</label>
+                    <label for="">Bookname</label>
                     <input type="text" name="name" id="" required><br>
-                    <label for="">Password:</label>
-                    <input type="password" name="pass" id="" required><br>
+                    <label for="">Type</label>
+                    <input type="text" name="pass" id="" required><br>
                     <label for="">Password confirm</label>
                     <input type="password" name="conpass" id="" required><br>
                     <hr>
