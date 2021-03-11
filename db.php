@@ -1,6 +1,6 @@
 <?php
     define("hostname","localhost");
-    define("user","user");
+    define("user","root");
     define("passwpord","");
     define("dbname","bookstore");
 ?>
