@@ -5,8 +5,8 @@
     define("dbname","bookstore");
 ?>
 <?php
-$mysqli = new mysqli(hostname,user,password,dbname);
-if ($mysqli -> conn){
-    Nottel;
-    test
-}
+$conn=new mysqli(hostname,user,passwpord,dbname);
+$conn->query("SELECT * FROM `book` WHERE 1");
+if($conn->connect_error) echo "not connect";
+else echo "Connect success";
+?>
