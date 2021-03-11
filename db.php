@@ -8,4 +8,5 @@
 $mysqli = new mysqli(hostname,user,password,dbname);
 if ($mysqli -> conn){
     Nottel;
+    test
 }
