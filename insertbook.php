@@ -23,9 +23,10 @@
                     <label for="">Bookname</label>
                     <input type="text" name="name" id="" required><br>
                     <label for="">Type</label>
-                    <input type="text" name="pass" id="" required><br>
-                    <label for="">Password confirm</label>
-                    <input type="password" name="conpass" id="" required><br>
+                    <input type="text" name="Type" id="" required><br>
+                    <label for="">Status id</label>
+                    <input type="text" name="Status" id="" required><br>
+
                     <hr>
                     <label for="">Select image</label>
                     <input type="file" name="img" id="" size='50'><br>
