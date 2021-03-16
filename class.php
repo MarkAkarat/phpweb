@@ -51,7 +51,7 @@
             $sql="SELECT * FROM `food`";
             $result=$this->dbConn->query($sql);
             echo "<table border='1'>";
-            echo "<tr><th colspan='4'><h4>สูตรอาหาร</h4></th></tr>";
+            echo "<tr><th colspan='4'><h4>สูตรอาหาร1</h4></th></tr>";
             while ($row=$result->fetch_assoc()){
 
                    
